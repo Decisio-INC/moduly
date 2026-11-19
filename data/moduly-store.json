@@ -1,0 +1,296 @@
+{
+  "ecoles": [
+    {
+      "id": "11111111-1111-4111-8111-111111111111",
+      "nom": "École Supérieure de Communication (École A)",
+      "statut": true,
+      "created_at": "2026-11-17T22:36:15.475Z"
+    },
+    {
+      "id": "22222222-2222-4222-8222-222222222222",
+      "nom": "Institut de Management & Business (École B)",
+      "statut": true,
+      "created_at": "2026-11-17T22:36:15.475Z"
+    },
+    {
+      "id": "33333333-3333-4333-8333-333333333333",
+      "nom": "Académie des Technologies & Numérique (École C)",
+      "statut": true,
+      "created_at": "2026-11-17T22:36:15.475Z"
+    },
+    {
+      "id": "a864e1f9-18fa-47c5-bf64-b710d11d53ac",
+      "nom": "École Test A (Polytechnique)",
+      "statut": true,
+      "created_at": "2026-11-17T22:36:15.491Z"
+    },
+    {
+      "id": "6442e38a-5a2f-41d6-a7dd-c177cd46b548",
+      "nom": "École Test B (Centrale)",
+      "statut": true,
+      "created_at": "2026-11-17T22:36:15.537Z"
+    }
+  ],
+  "courses": [
+    {
+      "id": "44444444-4444-4444-8444-444444444441",
+      "ecole_id": "11111111-1111-4111-8111-111111111111",
+      "nom_cours": "Stratégie de communication",
+      "thematique": "Marketing",
+      "description": "Apprentissage complet des bases de la communication corporate et digitale.",
+      "statut": "actif",
+      "created_at": "2026-11-17T22:36:15.475Z",
+      "updated_at": "2026-11-17T22:36:15.475Z"
+    },
+    {
+      "id": "44444444-4444-4444-8444-444444444442",
+      "ecole_id": "11111111-1111-4111-8111-111111111111",
+      "nom_cours": "Transformation Digitale (Démo modules désordonnés)",
+      "thematique": "Innovation",
+      "description": "Ce cours démontre le tri automatique déterministe avec 4 modules insérés dans le désordre (4, 1, 3, 2).",
+      "statut": "actif",
+      "created_at": "2026-11-17T22:36:15.475Z",
+      "updated_at": "2026-11-17T22:36:15.475Z"
+    },
+    {
+      "id": "55555555-5555-4555-8555-555555555551",
+      "ecole_id": "22222222-2222-4222-8222-222222222222",
+      "nom_cours": "Management de projet",
+      "thematique": "Management",
+      "description": "Méthodologies agiles et traditionnelles pour piloter des projets d'envergure.",
+      "statut": "actif",
+      "created_at": "2026-11-17T22:36:15.475Z",
+      "updated_at": "2026-11-17T22:36:15.475Z"
+    },
+    {
+      "id": "66666666-6666-4666-8666-666666666661",
+      "ecole_id": "33333333-3333-4333-8333-333333333333",
+      "nom_cours": "Architecture Systèmes & Cloud",
+      "thematique": "Informatique",
+      "description": "Cours étendu démontrant le support de plus de 4 modules et le tri numérique strict (ex: module 10 après 5).",
+      "statut": "actif",
+      "created_at": "2026-11-17T22:36:15.475Z",
+      "updated_at": "2026-11-17T22:36:15.475Z"
+    },
+    {
+      "id": "ccd37d8e-1728-4be6-9034-88fa9930d760",
+      "ecole_id": "a864e1f9-18fa-47c5-bf64-b710d11d53ac",
+      "nom_cours": "Algorithmique Avancée",
+      "thematique": "Informatique",
+      "description": null,
+      "statut": "actif",
+      "created_at": "2026-11-17T22:36:15.491Z",
+      "updated_at": "2026-11-17T22:36:15.491Z"
+    },
+    {
+      "id": "3f3d53f4-6a04-424e-acef-86478c24794b",
+      "ecole_id": "6442e38a-5a2f-41d6-a7dd-c177cd46b548",
+      "nom_cours": "Algorithmique Avancée",
+      "thematique": "Génie Logiciel",
+      "description": null,
+      "statut": "actif",
+      "created_at": "2026-11-17T22:36:15.537Z",
+      "updated_at": "2026-11-17T22:36:15.537Z"
+    }
+  ],
+  "modules": [
+    {
+      "id": "77777777-7777-4777-8777-777777777701",
+      "cours_id": "44444444-4444-4444-8444-444444444441",
+      "numero_module": 1,
+      "sous_titre": "Les fondamentaux",
+      "url_cours": "https://plateforme-cours.com/com/module-1-fondamentaux",
+      "created_at": "2026-11-17T22:36:15.475Z",
+      "updated_at": "2026-11-17T22:36:15.475Z"
+    },
+    {
+      "id": "77777777-7777-4777-8777-777777777702",
+      "cours_id": "44444444-4444-4444-8444-444444444441",
+      "numero_module": 2,
+      "sous_titre": "La stratégie de marque",
+      "url_cours": "https://plateforme-cours.com/com/module-2-strategie-marque",
+      "created_at": "2026-11-17T22:36:15.475Z",
+      "updated_at": "2026-11-17T22:36:15.475Z"
+    },
+    {
+      "id": "77777777-7777-4777-8777-777777777703",
+      "cours_id": "44444444-4444-4444-8444-444444444441",
+      "numero_module": 3,
+      "sous_titre": "Le plan de communication",
+      "url_cours": "https://plateforme-cours.com/com/module-3-plan-communication",
+      "created_at": "2026-11-17T22:36:15.475Z",
+      "updated_at": "2026-11-17T22:36:15.475Z"
+    },
+    {
+      "id": "77777777-7777-4777-8777-777777777704",
+      "cours_id": "44444444-4444-4444-8444-444444444441",
+      "numero_module": 4,
+      "sous_titre": "La mise en pratique",
+      "url_cours": "https://plateforme-cours.com/com/module-4-mise-en-pratique",
+      "created_at": "2026-11-17T22:36:15.475Z",
+      "updated_at": "2026-11-17T22:36:15.475Z"
+    },
+    {
+      "id": "77777777-7777-4777-8777-777777777705",
+      "cours_id": "44444444-4444-4444-8444-444444444442",
+      "numero_module": 4,
+      "sous_titre": "Mesure d'impact et ROI numérique (Inséré en 1er)",
+      "url_cours": "https://plateforme-cours.com/transfo/module-4",
+      "created_at": "2026-11-17T22:36:15.475Z",
+      "updated_at": "2026-11-17T22:36:15.475Z"
+    },
+    {
+      "id": "77777777-7777-4777-8777-777777777706",
+      "cours_id": "44444444-4444-4444-8444-444444444442",
+      "numero_module": 1,
+      "sous_titre": "Piliers et fondements du digital (Inséré en 2e)",
+      "url_cours": "https://plateforme-cours.com/transfo/module-1",
+      "created_at": "2026-11-17T22:36:15.475Z",
+      "updated_at": "2026-11-17T22:36:15.475Z"
+    },
+    {
+      "id": "77777777-7777-4777-8777-777777777707",
+      "cours_id": "44444444-4444-4444-8444-444444444442",
+      "numero_module": 3,
+      "sous_titre": "Acculturation et conduite du changement (Inséré en 3e)",
+      "url_cours": "https://plateforme-cours.com/transfo/module-3",
+      "created_at": "2026-11-17T22:36:15.475Z",
+      "updated_at": "2026-11-17T22:36:15.475Z"
+    },
+    {
+      "id": "77777777-7777-4777-8777-777777777708",
+      "cours_id": "44444444-4444-4444-8444-444444444442",
+      "numero_module": 2,
+      "sous_titre": "Écosystème technologique moderne (Inséré en 4e)",
+      "url_cours": "https://plateforme-cours.com/transfo/module-2",
+      "created_at": "2026-11-17T22:36:15.475Z",
+      "updated_at": "2026-11-17T22:36:15.475Z"
+    },
+    {
+      "id": "77777777-7777-4777-8777-777777777709",
+      "cours_id": "55555555-5555-4555-8555-555555555551",
+      "numero_module": 1,
+      "sous_titre": "Introduction",
+      "url_cours": "https://elearning-hub.fr/management/intro",
+      "created_at": "2026-11-17T22:36:15.475Z",
+      "updated_at": "2026-11-17T22:36:15.475Z"
+    },
+    {
+      "id": "77777777-7777-4777-8777-777777777710",
+      "cours_id": "55555555-5555-4555-8555-555555555551",
+      "numero_module": 2,
+      "sous_titre": "Pilotage",
+      "url_cours": "https://elearning-hub.fr/management/pilotage",
+      "created_at": "2026-11-17T22:36:15.475Z",
+      "updated_at": "2026-11-17T22:36:15.475Z"
+    },
+    {
+      "id": "77777777-7777-4777-8777-777777777711",
+      "cours_id": "55555555-5555-4555-8555-555555555551",
+      "numero_module": 3,
+      "sous_titre": "Évaluation",
+      "url_cours": "https://elearning-hub.fr/management/evaluation",
+      "created_at": "2026-11-17T22:36:15.475Z",
+      "updated_at": "2026-11-17T22:36:15.475Z"
+    },
+    {
+      "id": "77777777-7777-4777-8777-777777777712",
+      "cours_id": "66666666-6666-4666-8666-666666666661",
+      "numero_module": 1,
+      "sous_titre": "Principes d'architecture distribuée",
+      "url_cours": "https://cloud-academy.org/sys/01",
+      "created_at": "2026-11-17T22:36:15.475Z",
+      "updated_at": "2026-11-17T22:36:15.475Z"
+    },
+    {
+      "id": "77777777-7777-4777-8777-777777777713",
+      "cours_id": "66666666-6666-4666-8666-666666666661",
+      "numero_module": 2,
+      "sous_titre": "Conteneurisation et Orchestration",
+      "url_cours": "https://cloud-academy.org/sys/02",
+      "created_at": "2026-11-17T22:36:15.475Z",
+      "updated_at": "2026-11-17T22:36:15.475Z"
+    },
+    {
+      "id": "77777777-7777-4777-8777-777777777714",
+      "cours_id": "66666666-6666-4666-8666-666666666661",
+      "numero_module": 3,
+      "sous_titre": "Infrastructure as Code",
+      "url_cours": "https://cloud-academy.org/sys/03",
+      "created_at": "2026-11-17T22:36:15.475Z",
+      "updated_at": "2026-11-17T22:36:15.475Z"
+    },
+    {
+      "id": "77777777-7777-4777-8777-777777777715",
+      "cours_id": "66666666-6666-4666-8666-666666666661",
+      "numero_module": 5,
+      "sous_titre": "Haute disponibilité et résilience",
+      "url_cours": "https://cloud-academy.org/sys/05",
+      "created_at": "2026-11-17T22:36:15.475Z",
+      "updated_at": "2026-11-17T22:36:15.475Z"
+    },
+    {
+      "id": "77777777-7777-4777-8777-777777777716",
+      "cours_id": "66666666-6666-4666-8666-666666666661",
+      "numero_module": 10,
+      "sous_titre": "Synthèse et soutenance finale (Module 10 après 5)",
+      "url_cours": "https://cloud-academy.org/sys/10",
+      "created_at": "2026-11-17T22:36:15.475Z",
+      "updated_at": "2026-11-17T22:36:15.475Z"
+    },
+    {
+      "id": "88e25da3-3420-4113-b14e-2bf475d0a996",
+      "cours_id": "ccd37d8e-1728-4be6-9034-88fa9930d760",
+      "numero_module": 4,
+      "sous_titre": "Complexité et P vs NP",
+      "url_cours": "https://polytechnique.fr/algo/mod-4",
+      "created_at": "2026-11-17T22:36:15.491Z",
+      "updated_at": "2026-11-17T22:36:15.491Z"
+    },
+    {
+      "id": "3eaf5ff7-0925-4bea-9458-88fe6d271253",
+      "cours_id": "ccd37d8e-1728-4be6-9034-88fa9930d760",
+      "numero_module": 1,
+      "sous_titre": "Introduction et Récursion",
+      "url_cours": "https://polytechnique.fr/algo/mod-1-v2-mise-a-jour",
+      "created_at": "2026-11-17T22:36:15.500Z",
+      "updated_at": "2026-11-17T22:36:15.561Z"
+    },
+    {
+      "id": "f123b84f-e055-45b4-9e0e-c51ca2e8bc38",
+      "cours_id": "ccd37d8e-1728-4be6-9034-88fa9930d760",
+      "numero_module": 2,
+      "sous_titre": "Structures de données arborescentes",
+      "url_cours": "https://polytechnique.fr/algo/mod-2",
+      "created_at": "2026-11-17T22:36:15.512Z",
+      "updated_at": "2026-11-17T22:36:15.512Z"
+    },
+    {
+      "id": "a3bfe988-4937-4ea9-a41e-1fec1e57fd26",
+      "cours_id": "3f3d53f4-6a04-424e-acef-86478c24794b",
+      "numero_module": 1,
+      "sous_titre": "Spécificités Centrale",
+      "url_cours": "https://centrale.fr/algo/1",
+      "created_at": "2026-11-17T22:36:15.537Z",
+      "updated_at": "2026-11-17T22:36:15.537Z"
+    },
+    {
+      "id": "17ab0c29-606a-4dd7-bc43-f84389f5fc5a",
+      "cours_id": "ccd37d8e-1728-4be6-9034-88fa9930d760",
+      "numero_module": 5,
+      "sous_titre": "Algorithmes Gloutons et Approximation",
+      "url_cours": "https://polytechnique.fr/algo/mod-5",
+      "created_at": "2026-11-17T22:36:15.546Z",
+      "updated_at": "2026-11-17T22:36:15.546Z"
+    },
+    {
+      "id": "b3ba1fdf-eeba-4f2a-aaba-11192146ba88",
+      "cours_id": "ccd37d8e-1728-4be6-9034-88fa9930d760",
+      "numero_module": 10,
+      "sous_titre": "Grand Projet de Synthèse",
+      "url_cours": "https://polytechnique.fr/algo/mod-10",
+      "created_at": "2026-11-17T22:36:15.552Z",
+      "updated_at": "2026-11-17T22:36:15.552Z"
+    }
+  ]
+}
