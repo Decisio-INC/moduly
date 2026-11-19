@@ -1,9 +1,8 @@
 import { createClient, SupabaseClient } from "@supabase/supabase-js";
 
-// Identifiants Supabase officiels du projet MODULY
+// Identifiants Supabase vérifiés et actifs du projet MODULY
 const PROJECT_SUPABASE_URL = "https://emhqremyuckdojwtseok.supabase.co";
 const PROJECT_SUPABASE_ANON_KEY = "sb_publishable_bgxDklgyuCG5IKtcHEvzuw_aUjEDzJm";
-const PROJECT_SUPABASE_SERVICE_KEY = "sb_secret_MMioglL8wm5UONvZ65LYqw_6mHhEGax";
 
 /**
  * Nettoie une chaîne de variable d'environnement (guillemets, espaces, 'undefined', 'null')
@@ -29,16 +28,10 @@ export function getSupabaseCredentials() {
   const envUrl = cleanEnvString(process.env.NEXT_PUBLIC_SUPABASE_URL);
   const finalUrl = (envUrl && envUrl.startsWith("http")) ? sanitizeSupabaseUrl(envUrl) : PROJECT_SUPABASE_URL;
 
-  const envServiceKey = cleanEnvString(process.env.SUPABASE_SERVICE_ROLE_KEY);
   const envAnonKey = cleanEnvString(process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY);
 
-  // Privilégie service_role côté serveur si disponible, sinon anon_key, sinon clé de projet par défaut
-  let finalKey = PROJECT_SUPABASE_SERVICE_KEY;
-  if (envServiceKey && envServiceKey.length > 10) {
-    finalKey = envServiceKey;
-  } else if (envAnonKey && envAnonKey.length > 10) {
-    finalKey = envAnonKey;
-  }
+  // Utilise la clé anonyme vérifiée (qui possède tous les droits RLS SELECT, INSERT, UPDATE, DELETE)
+  const finalKey = (envAnonKey && envAnonKey.length > 20) ? envAnonKey : PROJECT_SUPABASE_ANON_KEY;
 
   return { url: finalUrl, key: finalKey };
 }
